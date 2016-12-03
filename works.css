@@ -1,0 +1,77 @@
+h1{
+	margin: 6vh auto;
+	padding: 2vh;
+	color: #4D4D4D;
+	text-align: center;
+	width: 400px;
+}
+#sortArea{
+	margin: auto;
+	width: 1084px;
+}
+.container{
+	margin: auto;
+	margin-top: 50px;
+	left: -64px;
+	width: 100%;
+}
+.box{
+	margin: 50px;
+}
+
+.active {
+	
+}
+ul {
+	display: flex;
+	justify-content: center;
+	overflow: hidden;
+	list-style: none;
+}
+li {
+	margin-right: 2em;
+	float: left;
+	cursor: pointer;
+}
+li:hover{
+	opacity: 0.7;
+}
+li:before {
+	content: '';
+	width: 16px;
+	height: 16px;
+	display: inline-block;
+	position: relative;
+	left: -0.3em;
+	top: 0.05em;
+}
+.box:before {
+	content: '';
+	width: 28px;
+	height: 16px;
+	display: inline-block;
+	position: relative;
+	left: 28px;
+	top: -184px;
+}
+.all:before{
+	background: #444;
+}
+.programing:before{
+	background: #FF931E;
+}
+.graphic:before{
+	background: #7AC943;
+}
+.web:before{
+	background: #3FA9F5;
+}
+.drawing:before{
+	background: #FF1D25;
+}
+.threed:before{
+	background: #FF7BAC;
+}
+.report:before{
+	background: #BDCCD4;
+}

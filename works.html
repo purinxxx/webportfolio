@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>WORKS</title>
+	<link rel="stylesheet" type="text/css" href="works.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.shuffle.min.js"></script>
+
+</head>
+<body>
+	
+	<h1>WORKS</h1>
+
+<div id="sortArea">
+    <div id="sort">
+        <ul>
+            <li data-group="all" class="all active">All</li>
+            <li data-group="graphic" class="graphic">Graphic Design</li>
+            <li data-group="web" class="web">WEB Design</li>
+            <li data-group="programing" class="programing">Programing</li>
+            <li data-group="drawing" class="drawing">Drawing</li>
+            <li data-group="3d" class="threed">3D</li>
+            <li data-group="report" class="report">Report</li>
+        </ul>
+    </div>
+    <div class="container">
+        <div class="box web programing" data-groups='["web","programing"]'><img src="http://placehold.jp/24/ddd/000/300x200.png"></div>
+        <div class="box graphic" data-groups='["graphic"]'><img src="http://placehold.jp/24/ddd/000/300x200.png"></div>
+        <div class="box graphic" data-groups='["graphic"]'><img src="http://placehold.jp/24/ddd/000/300x200.png"></div>
+        <div class="box graphic" data-groups='["graphic"]'><img src="http://placehold.jp/24/ddd/000/300x200.png"></div>
+        <div class="box graphic" data-groups='["graphic"]'><img src="http://placehold.jp/24/ddd/000/300x200.png"></div>
+        <div class="box graphic" data-groups='["graphic"]'><img src="http://placehold.jp/24/ddd/000/300x200.png"></div>
+        <div class="box threed" data-groups='["3d"]'><img src="http://placehold.jp/24/ddd/000/300x200.png"></div>
+        <div class="box drawing" data-groups='["drawing"]'><img src="http://placehold.jp/24/ddd/000/300x200.png"></div>
+        <div class="box report" data-groups='["report"]'><img src="http://placehold.jp/24/ddd/000/300x200.png"></div>
+        <div class="box report" data-groups='["report"]'><img src="http://placehold.jp/24/ddd/000/300x200.png"></div>
+        <div class="box graphic" data-groups='["graphic"]'><img src="http://placehold.jp/24/ddd/000/300x200.png"></div>
+        <div class="box drawing" data-groups='["drawing"]'><img src="http://placehold.jp/24/ddd/000/300x200.png"></div>
+        <div class="box threed" data-groups='["3d"]'><img src="http://placehold.jp/24/ddd/000/300x200.png"></div>
+        <div class="box thresd programing" data-groups='["programing","3d"]'><img src="http://placehold.jp/24/ddd/000/300x200.png"></div>
+        <div class="box report" data-groups='["report"]'><img src="http://placehold.jp/24/ddd/000/300x200.png"></div>
+        <div class="box web" data-groups='["web"]'><img src="http://placehold.jp/24/ddd/000/300x200.png"></div>
+        <div class="box graphic" data-groups='["graphic"]'><img src="http://placehold.jp/24/ddd/000/300x200.png"></div>
+        <div class="box graphic" data-groups='["graphic"]'><img src="http://placehold.jp/24/ddd/000/300x200.png"></div>
+        <div class="box threed drawing" data-groups='["3d","drawing"]'><img src="http://placehold.jp/24/ddd/000/300x200.png"></div>
+        <div class="box drawing" data-groups='["drawing"]'><img src="http://placehold.jp/24/ddd/000/300x200.png"></div>
+        <div class="box report" data-groups='["report"]'><img src="http://placehold.jp/24/ddd/000/300x200.png"></div>
+        <div class="box web" data-groups='["web"]'><img src="http://placehold.jp/24/ddd/000/300x200.png"></div>
+        <div class="box web programing" data-groups='["web","programing"]'><img src="http://placehold.jp/24/ddd/000/300x200.png"></div>
+        <div class="box report graphic" data-groups='["report","graphic"]'><img src="http://placehold.jp/24/ddd/000/300x200.png"></div>
+        <div class="box programing" data-groups='["programing"]'><img src="http://placehold.jp/24/ddd/000/300x200.png"></div>
+    </div>
+</div>
+
+	<script>
+(function($){
+    $(function() {
+        $('#sort li').on('click', function() {
+            var $this = $(this),
+            $grid = $('.container');
+            $('#sort .active').removeClass('active');
+            $this.addClass('active');
+            $grid.shuffle($this.data('group'));
+        });
+        $('.container').shuffle({
+            group: 'all',
+            speed: 400,
+            easing: 'ease-in-out'
+        });
+    });
+})(jQuery);
+
+	</script>
+</body>
+</html>
