@@ -1,0 +1,65 @@
+html, body{
+	padding: 0px;
+	margin: 0px;
+}
+
+#top{
+	width: 100vw;
+	height: 100vh;
+}
+.circle{
+	position: absolute;
+	margin-left: 50vw;
+	height: 90vh
+}
+.topname{
+	padding-top: 20vh;
+	padding-left: 8vw;
+	padding-right: 8vw;
+}
+h1{
+	margin: 0px;
+	font-size: 3em;
+	color: #222;
+}
+h2{
+	margin: 0px;
+}
+h3{
+	color: #444;
+	font-size: medium;
+}
+ul{
+	padding: 0;
+	position: absolute;
+	bottom: 10vh;
+}
+li{
+	float: left;
+	list-style: none;
+	margin-right: 1em;
+
+}
+.slash:after {
+	content: "　/";
+	color: #666
+}
+li a{
+	color: #444;
+	text-decoration: none;
+	transition: color 0.3s;
+}
+li a:hover{
+	color: #aaa;
+}
+.bezier{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+
+#works{
+	height: 100vh;
+	background-color: #D3D2D6;
+	margin-top: -1px;
+}
