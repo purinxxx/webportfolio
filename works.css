@@ -1,3 +1,8 @@
+html, body{
+	padding: 0px;
+	margin: 0px;
+}
+
 h1{
 	margin: 6vh auto;
 	padding: 2vh;
@@ -23,7 +28,11 @@ h1{
 	
 }
 ul {
-	display: flex;
+	display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
 	justify-content: center;
 	overflow: hidden;
 	list-style: none;
@@ -42,7 +51,7 @@ li:before {
 	height: 16px;
 	display: inline-block;
 	position: relative;
-	left: -0.3em;
+	margin-right: 0.3em;
 	top: 0.05em;
 }
 .box:before {

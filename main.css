@@ -88,7 +88,7 @@ a.ghost:hover {
 .ghostbox{
 	float: inherit;
 	text-align: center;
-	padding-bottom: 6vh;
+	padding: 75px 0;
 }
 .container{
 	margin: auto;
@@ -121,13 +121,14 @@ a.box{
 .syoukai{
 	width: 250px;
 	padding-left: 15px;
+	text-align: justify;
 }
 p{
 	margin: 0px;
 	font-size: 0.8em;
 }
 p.name{
-	font-size: 1em;
+	font-size: 1.2em;
 }
 p.syussin, p.sentence{
 	color: #333;
