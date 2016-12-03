@@ -64,6 +64,7 @@ li a:hover{
 #works{
 	background-color: #D3D2D6;
 	margin-top: -1px;
+	margin-bottom: 10vh;
 }
 a.ghost{
   display: inline-block;
@@ -89,6 +90,51 @@ a.ghost:hover {
 	padding-bottom: 6vh;
 }
 .container{
+	margin: auto;
+	display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+	width: 90%;
+}
+a.box{
+	margin: 25px;
+}
+
+#about{
+	margin-bottom: 15vh;
+}
+.profile{
+	width: 530px;
+	margin: 6vh auto;
+	display: flex;
+	justify-content: center;
+}
+.a-sya{
+	padding-right: 15px;
+}
+.syoukai{
+	width: 250px;
+	padding-left: 15px;
+}
+p{
+	margin: 0px;
+	font-size: 0.8em;
+}
+p.name{
+	font-size: 1em;
+}
+p.syussin, p.sentence{
+	color: #333;
+}
+
+#skill{
+	margin-bottom: 15vh;
+}
+.icons{
 	display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
@@ -98,6 +144,15 @@ a.ghost:hover {
     justify-content: center;
 	width: 100%;
 }
-a.box{
-	margin: 25px;
+.icons img{
+	margin: 20px;
+}
+
+#contact{
+	margin-bottom: 25vh;
+}
+.social{
+	margin: 4vh 0 0 0;
+	width: 100%;
+	text-align: center;
 }
