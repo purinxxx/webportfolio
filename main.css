@@ -24,6 +24,9 @@ h1{
 }
 h2{
 	margin: 0px;
+	padding: 2vh;
+	color: #4D4D4D;
+	text-align: center;
 }
 h3{
 	color: #444;
@@ -59,7 +62,42 @@ li a:hover{
 }
 
 #works{
-	height: 100vh;
 	background-color: #D3D2D6;
 	margin-top: -1px;
+}
+a.ghost{
+  display: inline-block;
+  width: 150px;
+  margin: 45px 40px 40px;
+  padding: 15px 10px;
+  border: 1px solid #fff;
+  border-radius: 3px;
+  background: transparent;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  line-height: 1;
+  transition: .3s;
+}
+a.ghost:hover {
+	border: 1px solid rgba(0,0,0,.1);
+	background: rgba(0,0,0,.5); 
+}
+.ghostbox{
+	float: inherit;
+	text-align: center;
+	padding-bottom: 6vh;
+}
+.container{
+	display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+	width: 100%;
+}
+a.box{
+	margin: 25px;
 }
