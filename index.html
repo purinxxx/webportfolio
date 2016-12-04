@@ -2,6 +2,7 @@
 <html lang="ja">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<title>Miyata Kengo</title>
 	<link rel="stylesheet" type="text/css" href="main.css">
 	<script src="js/jquery.min.js"></script>
@@ -26,14 +27,19 @@
 	        var out_html = $($.parseHTML(data));//parse
 	        //console.log(out_html);
 	        $('#ajaxbox').append(out_html.filter('#sortArea')[0].lastElementChild);
-	        var w = $(window).width();
+	        var w = $('.container').width();
 	        var l = $('a.box').length-1;
-	        var cnt = 2;
-	        if (w>1166) {cnt = 6}
-	        else if(w>777 && w<=1166) {cnt=4}
+	        var cnt = 6;
+	        console.log(w);
+	        if (w<=699) {cnt = 2}
+	        else if(w>699 && w<=1049) {cnt=4}
+	        else if(w>1049 && w<=1400) {cnt=6}
+	        else if(w>1400 && w<=1745) {cnt=8}
+	        else if(w>1745 && w<=2100) {cnt=10}
+	        else if(w>2100) {cnt=12}
 	        for (var i = 1; i <= cnt; i++) {
 	        	var random = Math.floor(Math.random() * l);
-	        	console.log(random);
+	        	//console.log(random);
 	        	if ($('a.box').eq(random).is(':hidden')) {
 					$('a.box').eq(random).show();
 				} else {
@@ -64,7 +70,6 @@
 				<li class="slash"><a href="#skill">SKILL</a></li>
 				<li><a href="#contact">CONTACT</a></li>
 			</ul>
-			<img src="img/bezier.svg" class="bezier">
 		</div>
 	</div>
 	<div id="works">
@@ -90,7 +95,7 @@
 		<h2 class="notworks">ABOUT</h2>
 		<div class="profile">
 			<div class="a-sya">
-				<img src="img/author.jpg" width="250px;">
+				<img src="img/author.jpg">
 			</div>
 			<div class="syoukai">
 				<p class="name"><b>宮田　健吾</b></p>
@@ -116,9 +121,9 @@
 	<div id="contact">
 		<h2 class="notworks">CONTACT</h2>
 		<div class="social">
-			<p>mail : purinxxx@gmail.com</p>
-			<p>github : https://github.com/purinxxx</p>
-			<p>twitter :  @IDkaetazo</p>
+			<p>mail : <a href="mailto:purinxxx@gmail.com" target="blank">purinxxx@gmail.com</a></p>
+			<p>github : <a href="https://github.com/purinxxx" target="blank"></a>https://github.com/purinxxx</p>
+			<p>twitter :  <a href="https://twitter.com/IDkaetazo" target="blank">@IDkaetazo</a></p>
 		</div>
 	</div>
 
