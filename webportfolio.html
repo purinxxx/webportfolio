@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+	<meta charset="UTF-8">
+	<title>ポートフォリオサイト</title>
+	<link rel="stylesheet" type="text/css" href="kobetu.css">
+	<script src="js/jquery.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<p class="info">６,７期　グラフィックインフォメーション　授業課題</p>
+		<h1 class="web">ポートフォリオサイト（このサイト）</h1>
+		<img src="sakuhin/web/index.png" class="sakuhin" width="800px">
+
+		<h2 class="web">宮田健吾の集大成</h2>
+		<p>ポートフォリオサイトを制作するにあたって何を見てほしいか、ユーザーは何が見たいかを意識してその最大公約数でデザインしました。具体的には「あなたの名前は？」「何作ってるの？」「どんな人なの？」「何ができるの？」という４つに絞りました。この４つの要素は全て縦長のトップページに収めました。作品は全ては収まりきらないのでトップページではランダムな作品を２列に収まる数だけ表示するようにjqueryで制御しています。作品一覧のページはshuffle.jsというライブラリを使って実装しました。作品ジャンルごとでフィルタリングできて便利です。
+		<br><br>
+		URL　<a href="index.html">index.html</a><br>
+		制作ソフト　Adobe Illustrator sublimetext<br>
+		使用技術　html5 css3 jquery easing shuffle.js ajax svg<br>
+		製作期間　デザイン２週間　コーディング３日</p>
+
+		<h2 class="web">関連する作品</h2>
+		<div class="relation">
+			<a href="#" class="box web" data-groups='["web"]'><img src="http://placehold.jp/24/ddd/000/300x200.png"></a>
+			<a href="#" class="box web" data-groups='["web"]'><img src="http://placehold.jp/24/ddd/000/300x200.png"></a>
+		</div>
+
+		<div class="ghostbox">
+			<a href="works.html" class="ghost">作品一覧へ戻る</a>
+		</div>
+	</div>
+</body>
+</html>
