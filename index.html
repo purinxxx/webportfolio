@@ -18,6 +18,38 @@
 				return false;
 			});
 		});
+		$(function() {
+			$.ajax('works.html', {
+	        timeout : 1000, // 1000 ms
+	        datatype:'html'
+	    }).then(function(data){
+	        var out_html = $($.parseHTML(data));//parse
+	        //console.log(out_html);
+	        $('#ajaxbox').append(out_html.filter('#sortArea')[0].lastElementChild);
+	        var w = $(window).width();
+	        var l = $('a.box').length-1;
+	        var cnt = 2;
+	        if (w>1166) {cnt = 6}
+	        else if(w>777 && w<=1166) {cnt=4}
+	        for (var i = 1; i <= cnt; i++) {
+	        	var random = Math.floor(Math.random() * l);
+	        	console.log(random);
+	        	if ($('a.box').eq(random).is(':hidden')) {
+					$('a.box').eq(random).show();
+				} else {
+					i--;
+				}
+	        }
+	    },function(jqXHR, textStatus) {
+	        if(textStatus!=="success") {
+	            var txt = "<p>textStatus:"+ textStatus + "</p>" +
+	                "<p>status:"+ jqXHR.status + "</p>" +
+	                "<p>responseText : </p><div>" + jqXHR.responseText +
+	                "</div>";
+	            $('.container').html(txt);
+	        }
+    		});
+		});
 	</script>
 </head>
 <body>
@@ -37,6 +69,10 @@
 	</div>
 	<div id="works">
 		<h2 class="works">WORKS</h2>
+		<div id="ajaxbox">
+			
+		</div>
+		<!--
 		<div class="container">
 			<a href="#" class="box"><img src="http://placehold.jp/24/fff/000/300x200.png"></a>
 			<a href="#" class="box"><img src="http://placehold.jp/24/fff/000/300x200.png"></a>
@@ -45,6 +81,7 @@
 			<a href="#" class="box"><img src="http://placehold.jp/24/fff/000/300x200.png"></a>
 			<a href="#" class="box"><img src="http://placehold.jp/24/fff/000/300x200.png"></a>
 		</div>
+		-->
 		<div class="ghostbox">
 			<a href="works.html" class="ghost">もっと見る</a>
 		</div>
