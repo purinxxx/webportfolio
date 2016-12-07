@@ -8,8 +8,8 @@ p{
 	text-align: justify;
 }
 .container{
-	width: 90%;
-	max-width: 800px;
+	width: 60%;
+	min-width: 800px;
 	margin: auto;
 }
 .info{
@@ -28,7 +28,7 @@ h1:before {
 	top: 0.1em;
 }
 h2{
-	margin: 6em 0 1em 0;
+	margin: 4em 0 1em 0;
 	padding-bottom: 0.3em;
 	border-bottom: 2px solid;
 }
@@ -106,8 +106,8 @@ a.ghost{
   line-height: 1;
   transition: .3s;
   text-align: center;
-  padding: 15px 10px;
-  width: 182px;
+  padding: 1.2em 10px;
+  width: 10em;
   display: inline-block;
   margin: auto;
 }
@@ -120,4 +120,7 @@ a.ghost:hover {
 	float: inherit;
 	text-align: center;
 	padding-bottom: 6vh;
+}
+.sakuhin{
+	margin: 0 0 2vh 0;
 }

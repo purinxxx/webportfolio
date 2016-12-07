@@ -87,8 +87,8 @@ li:before {
 
 a.ghost{
   display: inline-block;
-  width: 166px;
-  padding: 15px 10px;
+  width: 10em;
+  padding: 1.2em 10px;
   border: 1px solid #BDCCD4;
   border-radius: 3px;
   background: transparent;
