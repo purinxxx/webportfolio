@@ -150,6 +150,7 @@ a.box{
 p{
 	margin: 0px;
 	font-size: 0.8em;
+	line-height: 1.5em;
 }
 p.name{
 	font-size: 1.2em;
@@ -192,5 +193,6 @@ p.syussin, p.sentence{
 	padding-top: 10vh;
 }
 .notworks{
-	padding-top: 25vh;
+	margin-top: 15vh;
+	padding-top: 10vh;
 }
