@@ -82,6 +82,7 @@ a.ghost{
   text-decoration: none;
   line-height: 1;
   transition: .3s;
+  box-shadow: rgba(0,0,0,0.1) 0px 1px 5px;
 }
 a.ghost:hover {
 	border: 1px solid rgba(0,0,0,.1);
