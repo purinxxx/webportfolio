@@ -3,6 +3,7 @@ html, body{
 	margin: 0px;
 	overflow-x : hidden;
 	overflow-y : auto;
+	font-family: "Hiragino Kaku Gothic Pro", Verdana, Arial, Helvetica, "ヒラギノ角ゴ Pro W3", "Osaka", "ＭＳ Ｐゴシック", sans-serif;
 }
 
 #top{

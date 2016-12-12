@@ -1,6 +1,7 @@
 html, body{
 	padding: 0px;
 	margin: 0px;
+	font-family: "Hiragino Kaku Gothic Pro", Verdana, Arial, Helvetica, "ヒラギノ角ゴ Pro W3", "Osaka", "ＭＳ Ｐゴシック", sans-serif;
 }
 
 h1{
@@ -25,7 +26,7 @@ h1{
 }
 
 .active {
-	
+    text-decoration: line-through;
 }
 ul {
 	display: -webkit-flex;
