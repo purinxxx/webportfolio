@@ -3,11 +3,18 @@ html, body{
 	margin: 0px;
 	overflow-x : hidden;
 	overflow-y : auto;
-	font-family: "Hiragino Kaku Gothic Pro", Verdana, Arial, Helvetica, "ヒラギノ角ゴ Pro W3", "Osaka", "ＭＳ Ｐゴシック", sans-serif;
 }
 
 #top{
 	height: 100vh;
+	opacity: 0;
+    -webkit-animation: huwatto 1s ease 0.3s 1 forwards;
+    animation: huwatto 1s ease 0.3s 1 forwards;
+}
+@keyframes huwatto {
+  100% {
+    opacity: 1;
+  }
 }
 .circle{
 	position: absolute;
