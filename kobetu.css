@@ -40,7 +40,7 @@ h2{
 	background: #444;
 }
 .programing:before{
-	background: #FF931E;
+	background: #FF1D25;
 }
 .graphic:before{
 	background: #7AC943;
@@ -49,7 +49,7 @@ h2{
 	background: #3FA9F5;
 }
 .drawing:before{
-	background: #FF1D25;
+	background: #FF931E;
 }
 .threed:before{
 	background: #FF7BAC;
@@ -59,7 +59,7 @@ h2{
 }
 
 .programing{
-	border-bottom-color: #FF931E;
+	border-bottom-color: #FF1D25;
 }
 .graphic{
 	border-bottom-color: #7AC943;
@@ -68,7 +68,7 @@ h2{
 	border-bottom-color: #3FA9F5;
 }
 .drawing{
-	border-bottom-color: #FF1D25;
+	border-bottom-color: #FF931E;
 }
 .threed{
 	border-bottom-color: #FF7BAC;
