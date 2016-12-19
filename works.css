@@ -7,8 +7,7 @@ html, body{
 h1{
 	color: #4D4D4D;
 	text-align: center;
-	margin: 6vh auto;
-	padding: 2vh 0;
+	padding-top: 0.5em;
 }
 #sortArea{
 	width: 1084px;
@@ -118,7 +117,7 @@ a.ghost:hover {
 		left: -44px;
 	}
 	ul{
-		margin-bottom: 4em;
+		margin-bottom: 2em;
 		flex-wrap: wrap;
 		justify-content: flex-start;
 		padding-left: 12px;
@@ -139,7 +138,7 @@ a.ghost:hover {
 		top: 22px;
 	}
 	ul{
-		margin-bottom: 3em;
+		margin-bottom: 1em;
 		flex-wrap: wrap;
 		padding-left: 12px;
 		justify-content: flex-start;;;;
