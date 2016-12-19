@@ -84,10 +84,11 @@ h2{
     display: -o-flex;
     display: flex;
 	justify-content: center;
-	margin-left: -28px;
+	margin: auto;
 }
 .box{
-	margin: 25px;
+	margin: 25px auto;
+	width: 300px;
 }
 .box:before {
 	content: '';
@@ -95,8 +96,8 @@ h2{
 	height: 16px;
 	display: inline-block;
 	position: relative;
-	left: 28px;
-	top: -184px;
+	left: 0px;
+	top: 22px;
 }
 
 a.ghost{
@@ -134,13 +135,10 @@ a.ghost:hover {
 	}
 	.relation{
 		flex-direction: column;
-		margin-left: 14px;
+		margin-left: 12px;
 	}
 	.ghostbox {
 	    width: 360px;
 	}
-	.box:before {
-		left: 0px;
-		top: 22px;
-	}
 }
+
