@@ -5,21 +5,20 @@ html, body{
 }
 
 h1{
-	margin: 6vh auto;
-	padding: 2vh;
 	color: #4D4D4D;
 	text-align: center;
-	width: 400px;
+	margin: 6vh auto;
+	padding: 2vh 0;
 }
 #sortArea{
-	margin: auto;
 	width: 1084px;
+	margin: auto;
 }
 .container{
-	margin: auto;
 	margin-top: 50px;
-	left: -64px;
 	width: 100%;
+	margin: auto;
+	left: -64px;
 }
 .box{
 	margin: 50px;
@@ -34,9 +33,10 @@ ul {
     display: -ms-flex;
     display: -o-flex;
     display: flex;
-	justify-content: center;
 	overflow: hidden;
 	list-style: none;
+	margin-bottom: 5em;
+	justify-content: center;
 }
 li {
 	margin-right: 2em;
@@ -104,8 +104,52 @@ a.ghost:hover {
 	color: rgba(90,96,99,.5); 
 }
 .ghostbox{
-	margin: 15vh 0 10vh 0;
 	float: inherit;
 	text-align: center;
 	padding-bottom: 6vh;
+	margin: 15vh auto 10vh auto;
 }
+
+@media screen and (min-width: 710px) and (max-width: 1084px) {
+	#sortArea{
+		width: 710px;
+	}
+	.container{
+		left: -44px;
+	}
+	ul{
+		margin-bottom: 4em;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+		padding-left: 12px;
+	}
+	li{
+		margin: 0.5em 1em;
+	}
+}
+@media screen and (max-width: 710px) {
+	#sortArea{
+		width: 360px;
+	}
+	.container{
+		left: -22px;
+	}
+	.box:before {
+		left: 0px;
+		top: 22px;
+	}
+	ul{
+		margin-bottom: 3em;
+		flex-wrap: wrap;
+		padding-left: 12px;
+		justify-content: flex-start;;;;
+	}
+	li{
+		margin: 0.5em 1em;
+	}
+	h1, .ghostbox{
+		width: 360px;
+	}
+}
+
+

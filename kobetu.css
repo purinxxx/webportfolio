@@ -7,7 +7,6 @@ html,body{
 p{
 	margin: 0;
 	text-align: justify;
-	line-height: 1.5em;
 	word-wrap: break-word;
 }
 .container{
@@ -119,11 +118,29 @@ a.ghost:hover {
 	color: rgba(90,96,99,.5); 
 }
 .ghostbox{
-	margin: 15vh 0 10vh 0;
+	margin: 15vh auto 10vh auto;
 	float: inherit;
 	text-align: center;
 	padding-bottom: 6vh;
 }
 .sakuhin{
 	margin: 0 0 2vh 0;
+}
+
+@media screen and (max-width: 800px) {
+	.container{
+		width: 90%;
+		min-width: initial;
+	}
+	.relation{
+		flex-direction: column;
+		margin-left: 14px;
+	}
+	.ghostbox {
+	    width: 360px;
+	}
+	.box:before {
+		left: 0px;
+		top: 22px;
+	}
 }
